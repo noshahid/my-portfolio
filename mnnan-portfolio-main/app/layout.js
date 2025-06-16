@@ -26,6 +26,9 @@ const jostFont = Jost({ subsets: ['latin'] });
 export const metadata = {
   title: "Portfolio",
   description: "My Portfolio Website",
+  verification: {
+    google: "q3hgj97vC5UNZQmMIiF-pzfL8uuQpgXL89YiP48h2Kg"
+  }
 };
 
 export default function RootLayout({ children }) {
