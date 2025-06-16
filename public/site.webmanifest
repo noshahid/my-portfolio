@@ -1,10 +1,10 @@
 {
-  "name": "Mnnan - Portfolio",
+  "name": "Mnnan - Frontend Developer & WordPress Specialist",
   "short_name": "Mnnan",
   "description": "Frontend Developer & WordPress Specialist Portfolio",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#1a1a1a",
+  "background_color": "#ffffff",
   "theme_color": "#ffd60a",
   "icons": [
     {

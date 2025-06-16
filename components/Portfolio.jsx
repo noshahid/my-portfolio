@@ -7,10 +7,13 @@ import { projectcategories } from "@/public/assets/Data";
 const Portfolio = () => {
   const [activeCate, setActiveCate] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
+  const [visibleProjects, setVisibleProjects] = useState(6);
+  const [loadingStates, setLoadingStates] = useState({});
 
   // Function to handle category click
   const handleClick = (category) => {
     setActiveCate(category);
+    setVisibleProjects(6); // Reset visible projects when changing category
   };
 
   // Function to open project modal
@@ -22,6 +25,35 @@ const Portfolio = () => {
   const closeProjectModal = () => {
     setSelectedProject(null);
   };
+
+  // Function to handle image load
+  const handleImageLoad = (projectId) => {
+    setLoadingStates(prev => ({
+      ...prev,
+      [projectId]: false
+    }));
+  };
+
+  // Function to load more projects
+  const loadMoreProjects = () => {
+    setVisibleProjects(prev => prev + 6);
+  };
+
+  // Get filtered projects
+  const getFilteredProjects = () => {
+    let projects = [];
+    projectcategories.forEach(item => {
+      if (activeCate === "All" || item.category === activeCate) {
+        if (item.projectDetail) {
+          projects = [...projects, ...item.projectDetail];
+        }
+      }
+    });
+    return projects;
+  };
+
+  const filteredProjects = getFilteredProjects();
+  const hasMoreProjects = visibleProjects < filteredProjects.length;
 
   return (
     <>
@@ -47,54 +79,63 @@ const Portfolio = () => {
 
           {/* Project List */}
           <ul className="project-list">
-            {projectcategories.map((item) => {
-              if (activeCate === "All" || item.category === activeCate) {
-                return item.projectDetail
-                  ? item.projectDetail.map((project, index) => (
-                      <li className="project-item active" key={index}>
-                        <div className="project-content">
-                          <div className="project-img">
-                            <div className="project-item-icon-box">
-                              <IoMdEye />
-                            </div>
-                            <div className="image-container">
-                              <Image
-                                src={project.src}
-                                alt={project.name}
-                                height={400}
-                                width={800}
-                                className="project-image"
-                              />
-                            </div>
-                          </div>
-                          <div className="project-info">
-                            <h3 className="project-title">{project.name}</h3>
-                            <p className="project-category">{item.category}</p>
-                            <div className="project-links">
-                              <button
-                                onClick={() => openProjectModal(project)}
-                                className="view-details-btn"
-                              >
-                                View Details
-                              </button>
-                              <a
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="live-demo-btn"
-                              >
-                                <FaExternalLinkAlt /> Live Demo
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    ))
-                  : null;
-              }
-              return null;
-            })}
+            {filteredProjects.slice(0, visibleProjects).map((project, index) => (
+              <li className="project-item active" key={index}>
+                <div className="project-content">
+                  <div className="project-img">
+                    <div className="project-item-icon-box">
+                      <IoMdEye />
+                    </div>
+                    <div className="image-container">
+                      {loadingStates[project.id] !== false && (
+                        <div className="image-placeholder" />
+                      )}
+                      <Image
+                        src={project.src}
+                        alt={project.name}
+                        height={400}
+                        width={800}
+                        className={`project-image ${loadingStates[project.id] === false ? 'loaded' : ''}`}
+                        loading="lazy"
+                        onLoad={() => handleImageLoad(project.id)}
+                        placeholder="blur"
+                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSEkMjU1LS0yMi4qLjgyPj4+Ojo4Ojo4Ojo4Ojo4Ojo4Ojo4Ojo4Ojr/2wBDAR4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHr/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                      />
+                    </div>
+                  </div>
+                  <div className="project-info">
+                    <h3 className="project-title">{project.name}</h3>
+                    <p className="project-category">{project.category}</p>
+                    <div className="project-links">
+                      <button
+                        onClick={() => openProjectModal(project)}
+                        className="view-details-btn"
+                      >
+                        View Details
+                      </button>
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="live-demo-btn"
+                      >
+                        <FaExternalLinkAlt /> Live Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
           </ul>
+
+          {/* Show More Button */}
+          {hasMoreProjects && (
+            <div className="show-more-container">
+              <button onClick={loadMoreProjects} className="show-more-btn">
+                Show More Projects
+              </button>
+            </div>
+          )}
         </section>
 
         {/* Project Detail Modal */}
@@ -207,6 +248,63 @@ const Portfolio = () => {
             box-shadow: var(--shadow-2);
           }
 
+          /* Image Loading Styles */
+          .image-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+          }
+
+          .image-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--jet);
+            animation: pulse 1.5s infinite;
+          }
+
+          .project-image {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+          }
+
+          .project-image.loaded {
+            opacity: 1;
+          }
+
+          @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 0.8; }
+            100% { opacity: 0.6; }
+          }
+
+          /* Show More Button Styles */
+          .show-more-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+          }
+
+          .show-more-btn {
+            padding: 0.75rem 1.5rem;
+            background: var(--orange-yellow-crayola);
+            color: var(--smoky-black);
+            border: none;
+            border-radius: 8px;
+            font-size: var(--fs-6);
+            font-weight: var(--fw-500);
+            cursor: pointer;
+            transition: var(--transition-1);
+          }
+
+          .show-more-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-2);
+          }
+
           /* Modal Styles */
           .project-modal-overlay {
             position: fixed;
@@ -290,24 +388,6 @@ const Portfolio = () => {
             border-radius: 8px;
             font-size: var(--fs-7);
             font-weight: var(--fw-500);
-          }
-
-          .features-list {
-            list-style: none;
-            padding: 0;
-          }
-
-          .features-list li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.5rem;
-          }
-
-          .features-list li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: var(--orange-yellow-crayola);
           }
 
           @media (max-width: 640px) {

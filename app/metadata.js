@@ -1,11 +1,11 @@
 export const siteConfig = {
-  name: "Mnnan - Portfolio",
-  description: "Frontend Developer & WordPress Specialist with expertise in React, Next.js, and modern web technologies.",
-  url: "https://mnnan.vercel.app", // Replace with your actual domain
+  name: "Mnnan - Frontend Developer & WordPress Specialist",
+  description: "Professional portfolio of Mnnan, a skilled Frontend Developer & WordPress Specialist. Expert in React, Next.js, and modern web technologies. View my projects and get in touch for collaboration.",
+  url: "https://my-portfolio-nu-two-55.vercel.app",
   ogImage: "/assets/images/profile-image-mnnan.jpg",
   links: {
-    github: "https://github.com/yourusername", // Replace with your GitHub
-    linkedin: "https://linkedin.com/in/yourusername", // Replace with your LinkedIn
+    github: "https://github.com/mnnandev",
+    linkedin: "https://linkedin.com/in/mnnandev",
   },
   keywords: [
     "Frontend Developer",
@@ -17,9 +17,25 @@ export const siteConfig = {
     "JavaScript Developer",
     "Portfolio",
     "Mnnan",
+    "Web Development",
+    "Responsive Design",
+    "Modern Web Technologies",
+    "Custom WordPress Development",
+    "React Applications",
+    "Next.js Applications",
+    "Tailwind CSS",
+    "Web Performance",
+    "SEO Optimization",
+    "Mobile-First Development",
+    "Full Stack Developer",
+    "Web Application Development",
+    "Progressive Web Apps",
+    "Frontend Architecture",
+    "Web Accessibility",
+    "Performance Optimization"
   ],
   author: "Mnnan",
-  twitter: "@yourusername", // Replace with your Twitter handle
+  twitter: "@mnnandev",
 };
 
 export const defaultMetadata = {
@@ -31,6 +47,8 @@ export const defaultMetadata = {
   keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.author }],
   creator: siteConfig.author,
+  publisher: siteConfig.author,
+  links: siteConfig.links,
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -43,7 +61,7 @@ export const defaultMetadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: siteConfig.name,
+        alt: "Mnnan - Frontend Developer & WordPress Specialist Portfolio",
       },
     ],
   },
@@ -53,6 +71,7 @@ export const defaultMetadata = {
     description: siteConfig.description,
     images: [siteConfig.ogImage],
     creator: siteConfig.twitter,
+    site: siteConfig.twitter,
   },
   robots: {
     index: true,
@@ -71,4 +90,24 @@ export const defaultMetadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
+  alternates: {
+    canonical: siteConfig.url,
+  },
+  verification: {
+    google: "your-google-site-verification", // Add your Google Search Console verification code
+  },
+  category: "technology",
+  classification: "Portfolio",
+  referrer: "origin-when-cross-origin",
+  metadataBase: new URL(siteConfig.url),
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 }; 
