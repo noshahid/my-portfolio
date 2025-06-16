@@ -514,6 +514,13 @@ main {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .avatar-box {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 
 /*-----------------------------------*\
   #NAVBAR
