@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Mnnan - Frontend Developer & WordPress Specialist",
   description: "Professional portfolio of Mnnan, a skilled Frontend Developer & WordPress Specialist. Expert in React, Next.js, and modern web technologies. View my projects and get in touch for collaboration.",
-  url: "https://mnnan-portfolio.vercel.app",
+  url: "https://my-portfolio-nu-two-55.vercel.app",
   ogImage: "/assets/images/profile-image-mnnan.jpg",
   links: {
     github: "https://github.com/mnnandev",
