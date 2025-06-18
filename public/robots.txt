@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://my-portfolio-nu-two-55.vercel.app/sitemap.xml
+Sitemap: https://mnnan-portfolio.vercel.app/sitemap.xml
 
 # Disallow crawling of any private or admin routes
 Disallow: /api/

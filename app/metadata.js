@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Mnnan - Frontend Developer & WordPress Specialist",
   description: "Professional portfolio of Mnnan, a skilled Frontend Developer & WordPress Specialist. Expert in React, Next.js, and modern web technologies. View my projects and get in touch for collaboration.",
-  url: "https://my-portfolio-nu-two-55.vercel.app",
+  url: "https://mnnan-portfolio.vercel.app",
   ogImage: "/assets/images/profile-image-mnnan.jpg",
   links: {
     github: "https://github.com/mnnandev",
@@ -94,7 +94,7 @@ export const defaultMetadata = {
     canonical: siteConfig.url,
   },
   verification: {
-    google: "your-google-site-verification", // Add your Google Search Console verification code
+    google: "q3hgj97vC5UNZQmMIiF-pzfL8uuQpgXL89YiP48h2Kg", // Google Search Console verification code
   },
   category: "technology",
   classification: "Portfolio",
