@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="canonical" href={defaultMetadata.openGraph.url} />
         <meta name="theme-color" content="#ffd60a" />
+        {/* Google Search Console Verification */}
         <meta name="google-site-verification" content="gTSOWpNvkGYsqnxxY7EnZeXyN8SQh5Ue6EcekfVTBZY" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
