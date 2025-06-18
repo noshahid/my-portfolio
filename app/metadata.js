@@ -94,7 +94,7 @@ export const defaultMetadata = {
     canonical: siteConfig.url,
   },
   verification: {
-    google: "googlecf1e47c80a57ab84", // Google Search Console verification code
+    google: "gTSOWpNvkGYsqnxxY7EnZeXyN8SQh5Ue6EcekfVTBZY", // Google Search Console verification code
   },
   category: "technology",
   classification: "Portfolio",
