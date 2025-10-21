@@ -24,21 +24,19 @@ const About = () => {
         </header>
         <section className="about-text">
           <p>
-            I’m a frontend developer with over 3 years of going hands-on
-            experience in creating responsive and engaging user interfaces.
-            Recently, I’ve expanded my skill set to include WordPress with
-            WooCommerce, where I have 5 months of experience in crafting
-            customized websites and e-commerce solutions. Currently, I’m diving
-            into full-stack development with the MERN stack and have already
-            completed three projects, applying my learning to build scalable,
-            dynamic applications.
+            I'm a Team Lead & Project Manager with over 3 years of hands-on experience
+            in web development, specializing in WordPress, WooCommerce, and web animations.
+            My journey started as a Web Animator, where I fell in love with bringing websites
+            to life using CSS, JavaScript, GSAP, and Lottie. I've since evolved into a
+            Senior WordPress Developer, creating custom themes, plugins, and WooCommerce
+            solutions that are fast, secure, and user-friendly.
           </p>
           <p>
-            I’m proud to be part of XemenSolution in Multan, where I collaborate
-            with a talented team to deliver impactful solutions. I hold a
-            Bachelor’s degree in Computer Science from Virtual University,
-            Vehari campus, and am always excited about learning, growing, and
-            connecting with others in the tech community. Let’s connect!
+            Currently, I lead a talented team at Predawn Solution in Multan, managing
+            projects from start to finish while fostering collaboration and creativity.
+            I hold a Bachelor's degree in Computer Science from Virtual University,
+            and am always excited about learning, growing, and connecting with others
+            in the tech community. Let's connect!
           </p>
         </section>
 

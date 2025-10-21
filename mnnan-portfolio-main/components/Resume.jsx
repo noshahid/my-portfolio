@@ -22,11 +22,11 @@ const Resume = () => {
               <p className="timeline-text">
                 Enrolled at the Virtual University of Pakistan, where I
                 completed my first semester before pausing studies to pursue an
-                internship in Lahore. After 8 months of hands-on front-end developer  experience,
+                internship in Lahore. After gaining hands-on front-end developer experience,
                 I secured my first job with XemenSolution in Multan. Currently,
                 I am balancing my studies with work, continuing my degree in the
-                first half of the day and contributing professionally in the
-                second.
+                first half of the day and contributing professionally as a Senior
+                WordPress Developer and Team Lead in the second.
               </p>
             </li>
 
@@ -63,24 +63,31 @@ const Resume = () => {
   </div>
   <ol className="timeline-list">
     <li className="timeline-item">
-      <h4 className="h4 timeline-item-title">Frontend Developer</h4>
-      <span>2022 — Present</span>
+      <h4 className="h4 timeline-item-title">Team Lead & Project Manager</h4>
+      <span>2024 — Present</span>
       <p className="timeline-text">
-        Over 1.5 years of experience in developing responsive and engaging user interfaces using HTML, CSS, JavaScript, ReactJS,redux, jQuery, Bootstrap, and Tailwind CSS. Skilled in building optimized, user-centered web solutions that adapt seamlessly across devices.
+        Currently leading a talented team to deliver web projects from start to finish at Predawn Solution in Multan. I manage timelines, resources, and client communications to ensure everything runs smoothly. More than just managing, I focus on fostering collaboration and creativity, helping the team produce their best work and delivering websites that clients love.
+      </p>
+    </li>
+    <li className="timeline-item">
+      <h4 className="h4 timeline-item-title">Senior WordPress Developer | Custom Solutions</h4>
+      <span>2024</span>
+      <p className="timeline-text">
+        Developed custom WordPress solutions—themes, plugins, and WooCommerce features—tailored to each client's needs at Xemen Solutions. I paid close attention to performance, SEO, and code quality, ensuring the websites were fast, secure, and easy to maintain. I enjoy working across both front-end and back-end, creating websites that not only look good but work flawlessly.
       </p>
     </li>
     <li className="timeline-item">
       <h4 className="h4 timeline-item-title">WordPress Developer</h4>
-      <span>5 months experience</span>
+      <span>2023 — 2024</span>
       <p className="timeline-text">
-        Built customized websites and e-commerce solutions on WordPress with WooCommerce, enabling clients to establish and grow their online presence with user-friendly, scalable designs.
+        At TechTitanStudio, I focused on building custom WordPress themes and plugins that were clean, secure, and easy to manage. I worked closely on WooCommerce stores, improving performance and SEO, and making sure every site was responsive and user-friendly. I enjoyed translating client ideas into functional websites that truly represented their brand.
       </p>
     </li>
     <li className="timeline-item">
-      <h4 className="h4 timeline-item-title">Full-Stack Developer (MERN)</h4>
-      <span>Current</span>
+      <h4 className="h4 timeline-item-title">Web Animator</h4>
+      <span>2021 — 2023</span>
       <p className="timeline-text">
-        Currently developing full-stack skills using the MERN stack, with experience in Next.js, Express.js, MongoDB, and Node.js. Completed three projects, building scalable, dynamic applications that demonstrate proficiency in both frontend and backend technologies.
+        I loved bringing websites to life with smooth and engaging animations on various freelancing platforms. Using CSS, JavaScript, GSAP, and Lottie, I created interactive scroll effects, hover animations, and dynamic UI transitions that made websites feel more alive. Each project was an opportunity to turn a static layout into a more immersive experience for users.
       </p>
     </li>
   </ol>
@@ -91,30 +98,47 @@ const Resume = () => {
           <ul className="skills-list content-card">
             <li className="skills-item">
               <div className="title-wrapper">
-                <h5 className="h5">Frontend </h5>
-                <data value={80}>80%</data>
+                <h5 className="h5">WordPress Development</h5>
+                <data value={95}>95%</data>
               </div>
               <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{ width: "80%" }} />
+                <div className="skill-progress-fill" style={{ width: "95%" }} />
               </div>
             </li>
             <li className="skills-item">
               <div className="title-wrapper">
-                <h5 className="h5">WordPress</h5>
-                <data value={70}>70%</data>
+                <h5 className="h5">Web Animation (GSAP, Lottie)</h5>
+                <data value={90}>90%</data>
               </div>
               <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{ width: "70%" }} />
+                <div className="skill-progress-fill" style={{ width: "90%" }} />
               </div>
             </li>
-             
             <li className="skills-item">
               <div className="title-wrapper">
-                <h5 className="h5">Mern Stack</h5>
-                <data value={50}>50%</data>
+                <h5 className="h5">WooCommerce</h5>
+                <data value={88}>88%</data>
               </div>
               <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{ width: "50%" }} />
+                <div className="skill-progress-fill" style={{ width: "88%" }} />
+              </div>
+            </li>
+            <li className="skills-item">
+              <div className="title-wrapper">
+                <h5 className="h5">Project Management</h5>
+                <data value={85}>85%</data>
+              </div>
+              <div className="skill-progress-bg">
+                <div className="skill-progress-fill" style={{ width: "85%" }} />
+              </div>
+            </li>
+            <li className="skills-item">
+              <div className="title-wrapper">
+                <h5 className="h5">Team Leadership</h5>
+                <data value={82}>82%</data>
+              </div>
+              <div className="skill-progress-bg">
+                <div className="skill-progress-fill" style={{ width: "82%" }} />
               </div>
             </li>
           </ul>

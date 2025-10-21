@@ -39,7 +39,7 @@ const projectcategories = [
         technologies: ["React", "Tailwind CSS", "Chart.js", "Firebase"],
         date: "March 2024",
         liveUrl: "https://finance-dashboard.example.com",
-        githubUrl: "https://github.com/username/finance-dashboard",
+        githubUrl: "https://github.com/noshahid/finance-dashboard",
         gallery: [
           "/assets/images/project-1.jpg",
           "/assets/images/project-2.jpg",
@@ -60,7 +60,7 @@ const projectcategories = [
         technologies: ["React", "Redux", "Node.js", "MongoDB"],
         date: "February 2024",
         liveUrl: "https://ecommerce.example.com",
-        githubUrl: "https://github.com/username/ecommerce-platform",
+        githubUrl: "https://github.com/noshahid/ecommerce-platform",
         gallery: [
           "/assets/images/project-1.jpg",
           "/assets/images/project-2.jpg"
@@ -101,7 +101,7 @@ const projectcategories = [
         technologies: ["WordPress", "PHP", "JavaScript", "MySQL"],
         date: "January 2024",
         liveUrl: "https://corporate.example.com",
-        githubUrl: "https://github.com/username/corporate-website",
+        githubUrl: "https://github.com/noshahid/corporate-website",
         gallery: [
           "/assets/images/project-1.jpg"
         ]
@@ -141,7 +141,7 @@ const projectcategories = [
         technologies: ["MongoDB", "Express.js", "React", "Node.js", "Socket.io"],
         date: "December 2023",
         liveUrl: "https://social.example.com",
-        githubUrl: "https://github.com/username/social-platform",
+        githubUrl: "https://github.com/noshahid/social-platform",
         gallery: [
           "/assets/images/project-1.jpg",
           "/assets/images/project-2.jpg",

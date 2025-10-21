@@ -24,8 +24,8 @@ const poppins = Poppins({
 const jostFont = Jost({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Portfolio",
-  description: "My Portfolio Website",
+  title: "Noshahaid Nasir - Senior WordPress Developer & Team Lead",
+  description: "Portfolio of Noshahaid Nasir - Senior WordPress Developer and Team Lead specializing in WordPress, WooCommerce, and frontend development",
   verification: {
     google: "q3hgj97vC5UNZQmMIiF-pzfL8uuQpgXL89YiP48h2Kg"
   }
