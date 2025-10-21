@@ -17,39 +17,18 @@ const Resume = () => {
           </div>
           <ol className="timeline-list">
             <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">Graduation</h4>
-              <span>2021 — Present</span>
+              <h4 className="h4 timeline-item-title">Bachelor of Science in Computer Science</h4>
+              <span>2023 — 2026</span>
               <p className="timeline-text">
-                Enrolled at the Virtual University of Pakistan, where I
-                completed my first semester before pausing studies to pursue an
-                internship in Lahore. After gaining hands-on front-end developer experience,
-                I secured my first job with XemenSolution in Multan. Currently,
-                I am balancing my studies with work, continuing my degree in the
-                first half of the day and contributing professionally as a Senior
-                WordPress Developer and Team Lead in the second.
+                Pursuing a strong foundation in software development, web technologies, and problem-solving at Emerson University, Multan. The program includes hands-on projects that bridge theory and real-world applications, providing me with comprehensive knowledge in computer science fundamentals and modern development practices.
               </p>
             </li>
 
             <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">Intermediate</h4>
-              <span>2019 — 2021</span>
+              <h4 className="h4 timeline-item-title">Web Development Certification</h4>
+              <span>2021</span>
               <p className="timeline-text">
-                Completed Intermediate of Computer Science (ICS) with a focus on
-                foundational skills in computer science, enhancing my analytical
-                abilities and technical knowledge, essential for my journey in
-                web development.
-              </p>
-            </li>
-
-            <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">High School</h4>
-              <span>2017 — 2019</span>
-              <p className="timeline-text">
-                Completed high school with a focus in Computer Science, studying
-                in an English-medium environment. This program covered
-                foundational topics in programming, computer systems, and data
-                management, equipping me with essential technical and analytical
-                skills.
+                Completed an intensive, practical training program at Corvit Institute, Multan, focused on HTML, CSS, JavaScript, WordPress, and modern web development techniques. This certification prepared me to build responsive and user-focused websites, laying the foundation for my career in web development.
               </p>
             </li>
           </ol>
@@ -73,7 +52,7 @@ const Resume = () => {
       <h4 className="h4 timeline-item-title">Senior WordPress Developer | Custom Solutions</h4>
       <span>2024</span>
       <p className="timeline-text">
-        Developed custom WordPress solutions—themes, plugins, and WooCommerce features—tailored to each client's needs at Xemen Solutions. I paid close attention to performance, SEO, and code quality, ensuring the websites were fast, secure, and easy to maintain. I enjoy working across both front-end and back-end, creating websites that not only look good but work flawlessly.
+        Developed custom WordPress solutions—themes, plugins, and WooCommerce features—tailored to each client's needs. I paid close attention to performance, SEO, and code quality, ensuring the websites were fast, secure, and easy to maintain. I enjoy working across both front-end and back-end, creating websites that not only look good but work flawlessly.
       </p>
     </li>
     <li className="timeline-item">

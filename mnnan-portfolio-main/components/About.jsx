@@ -34,8 +34,8 @@ const About = () => {
           <p>
             Currently, I lead a talented team at Predawn Solution in Multan, managing
             projects from start to finish while fostering collaboration and creativity.
-            I hold a Bachelor's degree in Computer Science from Virtual University,
-            and am always excited about learning, growing, and connecting with others
+            I'm pursuing a Bachelor of Science in Computer Science at Emerson University,
+            Multan, and am always excited about learning, growing, and connecting with others
             in the tech community. Let's connect!
           </p>
         </section>
@@ -47,16 +47,16 @@ const About = () => {
               <div className="service-icon-box">
                 <Image
                   src={icondesgin}
-                  alt="design icon"
+                  alt="WordPress icon"
                   width={40}
                   height={40}
                 />
               </div>
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Web design</h4>
+                <h4 className="h4 service-item-title">WordPress Development</h4>
                 <p className="service-item-text">
-                  The most modern and high-quality design made at a professional
-                  level.
+                  Custom WordPress themes, plugins, and WooCommerce solutions
+                  built with clean, secure, and optimized code for maximum performance.
                 </p>
               </div>
             </li>
@@ -64,15 +64,16 @@ const About = () => {
               <div className="service-icon-box">
                 <Image
                   src={webIcon}
-                  alt="Web development icon"
+                  alt="Web animation icon"
                   width={40}
                   height={40}
                 />
               </div>
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Web development</h4>
+                <h4 className="h4 service-item-title">Web Animations</h4>
                 <p className="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Creating engaging animations using CSS, JavaScript, GSAP, and Lottie
+                  to bring websites to life with smooth, interactive experiences.
                 </p>
               </div>
             </li>
@@ -80,16 +81,16 @@ const About = () => {
               <div className="service-icon-box">
                 <Image
                   src={mobIcon}
-                  alt="mobile app icon"
+                  alt="Team leadership icon"
                   width={40}
                   height={40}
                 />
               </div>
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Mobile Responsive</h4>
+                <h4 className="h4 service-item-title">Team Leadership</h4>
                 <p className="service-item-text">
-                  As a stunning desinger i create Mobile optimize professioanl
-                  websites.
+                  Leading development teams, managing projects from start to finish,
+                  and fostering collaboration to deliver exceptional results.
                 </p>
               </div>
             </li>
@@ -98,10 +99,34 @@ const About = () => {
                 <FaCode color="#FFCD67" fontSize={39} />
               </div>
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Problem Solving</h4>
+                <h4 className="h4 service-item-title">Project Management</h4>
                 <p className="service-item-text">
-                  I love solving problems whether programming problems or real
-                  life problems.
+                  Managing timelines, resources, and client communications to ensure
+                  smooth project delivery and client satisfaction.
+                </p>
+              </div>
+            </li>
+            <li className="service-item">
+              <div className="service-icon-box text-[#FFCD67]">
+                <FaCode color="#FFCD67" fontSize={39} />
+              </div>
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">WooCommerce Solutions</h4>
+                <p className="service-item-text">
+                  Building custom e-commerce solutions with WooCommerce, optimizing
+                  performance, and creating user-friendly online stores.
+                </p>
+              </div>
+            </li>
+            <li className="service-item">
+              <div className="service-icon-box text-[#FFCD67]">
+                <FaCode color="#FFCD67" fontSize={39} />
+              </div>
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">Frontend Development</h4>
+                <p className="service-item-text">
+                  Creating responsive, modern web applications using HTML, CSS,
+                  JavaScript, React, and other cutting-edge technologies.
                 </p>
               </div>
             </li>
@@ -126,7 +151,7 @@ const About = () => {
                 <h4 className="h4 testimonials-item-title">Daniel lewis</h4>
                 <div className="testimonials-text">
                   <p>
-                    Not only was Manan's work on-time and to spec, he pays
+                    Not only was Noshahaid's work on-time and to spec, he pays
                     attention to improve the aesthetics of the site as well as
                     the functionality. Throughout the entire process he is
                     responsive, and willing to work through issues as they

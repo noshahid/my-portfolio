@@ -24,10 +24,16 @@ const poppins = Poppins({
 const jostFont = Jost({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Noshahaid Nasir - Senior WordPress Developer & Team Lead",
-  description: "Portfolio of Noshahaid Nasir - Senior WordPress Developer and Team Lead specializing in WordPress, WooCommerce, and frontend development",
-  verification: {
-    google: "q3hgj97vC5UNZQmMIiF-pzfL8uuQpgXL89YiP48h2Kg"
+  title: "Noshahaid Nasir - Senior WordPress Developer Team Lead & Project Manager",
+  description: "Portfolio of Noshahaid Nasir - Senior WordPress Developer and Team Lead specializing in WordPress development, web development, website development, and project management",
+  keywords: "Noshahid, Noshahid Nasir, senior wordpress developer, web developer, website development, wordpress development, team lead, project manager, wordpress expert, custom wordpress themes, woocommerce development",
+  author: "Noshahaid Nasir",
+  robots: "index, follow",
+  openGraph: {
+    title: "Noshahaid Nasir - Senior WordPress Developer",
+    description: "Senior WordPress Developer and Team Lead specializing in custom WordPress development, WooCommerce, and web solutions",
+    type: "website",
+    locale: "en_US"
   }
 };
 
